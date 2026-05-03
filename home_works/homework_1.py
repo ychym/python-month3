@@ -13,5 +13,4 @@ def main(page: ft.Page):
 
     page.add(text_hello, btn)
 
-ft.app(target = main)
-#ft.app(target = main, view = ft.AppView.WEB_BROWSER)
+ft.app(target = main, view = ft.AppView.WEB_BROWSER)
