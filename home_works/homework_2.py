@@ -2,10 +2,12 @@ import flet as ft
 
 def main(page: ft.Page):
    
-   def age(e):    
-    if age_input.value.isdigit():#on butun sandar gana->TRUE
+   def age(e):  
+    age = age_input.value.strip()
+
+    if age.value.isdigit():#on butun sandar gana -TRUE
       
-      if int(age_input.value) >= 18:
+      if int(age.value) >= 18:
         text_hello.value = f"Доступ разрешен!"
         text_hello.color = ft.Colors.GREEN
       else:   
