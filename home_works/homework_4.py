@@ -47,11 +47,12 @@ def main(page: ft.Page):
     theme_btn = ft.IconButton(icon = ft.Icons.SETTINGS, on_click = change_theme_mode)
 
     main_object = ft.Column([ft.Row([theme_btn, clear_btn]),
-                             ft.Row(text_hello),
-                             ft.Row([text_input, btn, ]),
-                             ft.Row(greeting_text)])
+                             ft.Row([text_hello]),
+                             ft.Row([text_input, btn]),
+                             ft.Row([greeting_text])
+                            ])
 
     page.add(main_object) 
-#ft.app(target = main)
-ft.app(target = main, view = ft.AppView.WEB_BROWSER)
+ft.app(target = main)
+#ft.app(target = main, view = ft.AppView.WEB_BROWSER)
 
